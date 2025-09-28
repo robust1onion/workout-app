@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="topApp">
+
+            <div id="sideBar"><!--JS will populate this--></div>
+
+            <div class="content">
+
+                <form id="workoutForm">
+
+                    <input type="text" placeholder="Exercise" id="exercise" required>
+                    <input type="number" placeholder="Sets" id="sets" min="1" required>
+                    <input type="number" placeholder="Reps" id="reps" min="1" required>
+                    <button type="submit" id="addButton">Add</button>
+
+                </form>
+
+                <h2 class="center">Workout!</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Exercise</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="workoutTableBody"><!-- JS will populate --></tbody>
+                </table>
+
+            </div>
+
+            <button id="save">save</button>
+
+        </div>
+
+        <br><br><br><br>
+        
+        <div id="weekInfo">
+            <button class="centerLR" id="centerL">⇐</button>
+            <button class="centerLR" id="centerR">⇒</button>
+            <h1 class="center" id="weekIdentifier"><!--JS's turn--></h1>
+            
+            
+        </div>
+
+        <div class="bottomApp">
+            <div class="content" id="content"><!-- JS will populate --></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
